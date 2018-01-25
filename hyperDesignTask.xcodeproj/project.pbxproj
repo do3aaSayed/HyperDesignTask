@@ -13,6 +13,11 @@
 		2B170517200FF8E700ADB299 /* hyperDesignTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B170515200FF8E700ADB299 /* hyperDesignTask.xcdatamodeld */; };
 		2B170519200FF8E700ADB299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B170518200FF8E700ADB299 /* Assets.xcassets */; };
 		2B17051C200FF8E800ADB299 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B17051A200FF8E800ADB299 /* LaunchScreen.storyboard */; };
+		2B170524201006AB00ADB299 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B170523201006AA00ADB299 /* Product.swift */; };
+		2B17052620101DB400ADB299 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B17052520101DB400ADB299 /* CollectionCell.swift */; };
+		2B1705282010268400ADB299 /* AlamofireClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1705272010268400ADB299 /* AlamofireClass.swift */; };
+		2B601B3C2017C9FA00135847 /* ProductImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B601B3B2017C9FA00135847 /* ProductImage.swift */; };
+		4A117120F58784712D9069FA /* Pods_hyperDesignTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C24619D600B0906E2A8B6 /* Pods_hyperDesignTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		2B170518200FF8E700ADB299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B17051B200FF8E800ADB299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B17051D200FF8E800ADB299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B170523201006AA00ADB299 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2B17052520101DB400ADB299 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		2B1705272010268400ADB299 /* AlamofireClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireClass.swift; sourceTree = "<group>"; };
+		2B601B3B2017C9FA00135847 /* ProductImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductImage.swift; sourceTree = "<group>"; };
+		3BD0C20D0BFF9EFD459E6319 /* Pods-hyperDesignTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyperDesignTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-hyperDesignTask/Pods-hyperDesignTask.release.xcconfig"; sourceTree = "<group>"; };
+		AB410330DB5EC7BEFA8DC490 /* Pods-hyperDesignTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyperDesignTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hyperDesignTask/Pods-hyperDesignTask.debug.xcconfig"; sourceTree = "<group>"; };
+		B96C24619D600B0906E2A8B6 /* Pods_hyperDesignTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hyperDesignTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A117120F58784712D9069FA /* Pods_hyperDesignTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				2B17050D200FF8E500ADB299 /* hyperDesignTask */,
 				2B17050C200FF8E500ADB299 /* Products */,
+				BB67984204C1E40AE5D0DFED /* Pods */,
+				DFA0DE7EAF9C4423186741A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +71,10 @@
 		2B17050D200FF8E500ADB299 /* hyperDesignTask */ = {
 			isa = PBXGroup;
 			children = (
+				2BA1431C201A6FBE00EE5BBA /* API wrapper */,
+				2BA1431B201A6F6600EE5BBA /* models */,
+				2BA14319201A6CBD00EE5BBA /* controllers */,
 				2B17050E200FF8E600ADB299 /* AppDelegate.swift */,
-				2B170510200FF8E600ADB299 /* ViewController.swift */,
 				2B170512200FF8E700ADB299 /* Main.storyboard */,
 				2B170518200FF8E700ADB299 /* Assets.xcassets */,
 				2B17051A200FF8E800ADB299 /* LaunchScreen.storyboard */,
@@ -67,6 +84,57 @@
 			path = hyperDesignTask;
 			sourceTree = "<group>";
 		};
+		2BA14319201A6CBD00EE5BBA /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B170510200FF8E600ADB299 /* ViewController.swift */,
+				2BA1431A201A6F1000EE5BBA /* collectionCellController */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		2BA1431A201A6F1000EE5BBA /* collectionCellController */ = {
+			isa = PBXGroup;
+			children = (
+				2B17052520101DB400ADB299 /* CollectionCell.swift */,
+			);
+			name = collectionCellController;
+			sourceTree = "<group>";
+		};
+		2BA1431B201A6F6600EE5BBA /* models */ = {
+			isa = PBXGroup;
+			children = (
+				2B170523201006AA00ADB299 /* Product.swift */,
+				2B601B3B2017C9FA00135847 /* ProductImage.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		2BA1431C201A6FBE00EE5BBA /* API wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				2B1705272010268400ADB299 /* AlamofireClass.swift */,
+			);
+			name = "API wrapper";
+			sourceTree = "<group>";
+		};
+		BB67984204C1E40AE5D0DFED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB410330DB5EC7BEFA8DC490 /* Pods-hyperDesignTask.debug.xcconfig */,
+				3BD0C20D0BFF9EFD459E6319 /* Pods-hyperDesignTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DFA0DE7EAF9C4423186741A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B96C24619D600B0906E2A8B6 /* Pods_hyperDesignTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B170520200FF8E800ADB299 /* Build configuration list for PBXNativeTarget "hyperDesignTask" */;
 			buildPhases = (
+				37C81AD3BB59AF5E096AD323 /* [CP] Check Pods Manifest.lock */,
 				2B170507200FF8E400ADB299 /* Sources */,
 				2B170508200FF8E400ADB299 /* Frameworks */,
 				2B170509200FF8E400ADB299 /* Resources */,
+				0D15AB20D89DF248300E7D7E /* [CP] Embed Pods Frameworks */,
+				67C7EB583EAABD4A5739341C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,14 +205,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D15AB20D89DF248300E7D7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hyperDesignTask/Pods-hyperDesignTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PinterestLayout/PinterestLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinterestLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hyperDesignTask/Pods-hyperDesignTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37C81AD3BB59AF5E096AD323 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hyperDesignTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67C7EB583EAABD4A5739341C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hyperDesignTask/Pods-hyperDesignTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B170507200FF8E400ADB299 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2B170511200FF8E600ADB299 /* ViewController.swift in Sources */,
+				2B601B3C2017C9FA00135847 /* ProductImage.swift in Sources */,
+				2B170524201006AB00ADB299 /* Product.swift in Sources */,
 				2B17050F200FF8E600ADB299 /* AppDelegate.swift in Sources */,
+				2B17052620101DB400ADB299 /* CollectionCell.swift in Sources */,
 				2B170517200FF8E700ADB299 /* hyperDesignTask.xcdatamodeld in Sources */,
+				2B1705282010268400ADB299 /* AlamofireClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +399,7 @@
 		};
 		2B170521200FF8E800ADB299 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB410330DB5EC7BEFA8DC490 /* Pods-hyperDesignTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hyperDesignTask/Info.plist;
@@ -276,6 +412,7 @@
 		};
 		2B170522200FF8E800ADB299 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BD0C20D0BFF9EFD459E6319 /* Pods-hyperDesignTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hyperDesignTask/Info.plist;
@@ -305,6 +442,7 @@
 				2B170522200FF8E800ADB299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
