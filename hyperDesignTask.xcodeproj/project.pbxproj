@@ -53,7 +53,7 @@
 		2B170502200FF8E200ADB299 = {
 			isa = PBXGroup;
 			children = (
-				2B17050D200FF8E500ADB299 /* hyperDesignTask */,
+				2B17050D200FF8E500ADB299 /* HyperDesignTask */,
 				2B17050C200FF8E500ADB299 /* Products */,
 				BB67984204C1E40AE5D0DFED /* Pods */,
 				DFA0DE7EAF9C4423186741A5 /* Frameworks */,
@@ -68,46 +68,42 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2B17050D200FF8E500ADB299 /* hyperDesignTask */ = {
+		2B17050D200FF8E500ADB299 /* HyperDesignTask */ = {
 			isa = PBXGroup;
 			children = (
+				2BA1431D201A848D00EE5BBA /* SupportFiles */,
 				2BA1431C201A6FBE00EE5BBA /* API wrapper */,
-				2BA1431B201A6F6600EE5BBA /* models */,
-				2BA14319201A6CBD00EE5BBA /* controllers */,
-				2B17050E200FF8E600ADB299 /* AppDelegate.swift */,
-				2B170512200FF8E700ADB299 /* Main.storyboard */,
-				2B170518200FF8E700ADB299 /* Assets.xcassets */,
-				2B17051A200FF8E800ADB299 /* LaunchScreen.storyboard */,
-				2B17051D200FF8E800ADB299 /* Info.plist */,
-				2B170515200FF8E700ADB299 /* hyperDesignTask.xcdatamodeld */,
+				2BA1431B201A6F6600EE5BBA /* Models */,
+				2BA14319201A6CBD00EE5BBA /* Controllers */,
 			);
+			name = HyperDesignTask;
 			path = hyperDesignTask;
 			sourceTree = "<group>";
 		};
-		2BA14319201A6CBD00EE5BBA /* controllers */ = {
+		2BA14319201A6CBD00EE5BBA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2B170510200FF8E600ADB299 /* ViewController.swift */,
-				2BA1431A201A6F1000EE5BBA /* collectionCellController */,
+				2BA1431A201A6F1000EE5BBA /* CollectionCell */,
 			);
-			name = controllers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
-		2BA1431A201A6F1000EE5BBA /* collectionCellController */ = {
+		2BA1431A201A6F1000EE5BBA /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
 				2B17052520101DB400ADB299 /* CollectionCell.swift */,
 			);
-			name = collectionCellController;
+			name = CollectionCell;
 			sourceTree = "<group>";
 		};
-		2BA1431B201A6F6600EE5BBA /* models */ = {
+		2BA1431B201A6F6600EE5BBA /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				2B170523201006AA00ADB299 /* Product.swift */,
 				2B601B3B2017C9FA00135847 /* ProductImage.swift */,
 			);
-			name = models;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		2BA1431C201A6FBE00EE5BBA /* API wrapper */ = {
@@ -116,6 +112,19 @@
 				2B1705272010268400ADB299 /* AlamofireClass.swift */,
 			);
 			name = "API wrapper";
+			sourceTree = "<group>";
+		};
+		2BA1431D201A848D00EE5BBA /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2B17050E200FF8E600ADB299 /* AppDelegate.swift */,
+				2B170512200FF8E700ADB299 /* Main.storyboard */,
+				2B170518200FF8E700ADB299 /* Assets.xcassets */,
+				2B17051A200FF8E800ADB299 /* LaunchScreen.storyboard */,
+				2B17051D200FF8E800ADB299 /* Info.plist */,
+				2B170515200FF8E700ADB299 /* hyperDesignTask.xcdatamodeld */,
+			);
+			name = SupportFiles;
 			sourceTree = "<group>";
 		};
 		BB67984204C1E40AE5D0DFED /* Pods */ = {

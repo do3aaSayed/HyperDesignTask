@@ -48,7 +48,6 @@ class CollectionViewController : UIViewController ,UICollectionViewDelegate , UI
             getProducts(idToStartFrom: products.count + 1)
         }
         let cellData = products[indexPath.row]
-        print("id : \(cellData.productId)")
         cell?.updateCell(receivedProduct: cellData)
         
         return cell!
